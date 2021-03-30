@@ -1,0 +1,86 @@
+@use '../styles/variable';
+
+.section {
+  display: flex;
+}
+
+.img {
+  margin-right: 40px;
+}
+
+.buttonTextContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.section button {
+  font-size: 24px;
+  font-family: "Roboto";
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 14px 40px;
+  box-shadow: variable.$shadowBox;
+}
+.section button:nth-child(1) {
+  margin-right: 24px;
+}
+
+.activeButton {
+  background-color: variable.$violet !important;
+  color: white;
+}
+
+.texte {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.allDataContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.dataContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 30px;
+}
+
+.dataTitle {
+  font-size: 36px;
+}
+
+.data {
+  width: 500px;
+  height: 400px;
+}
+
+@media (max-width: 700px) {
+  .img {
+    display: none;
+  }
+
+  .allDataContainer {
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .dataTitle {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .data {
+    width: 300px;
+    height: 200px;
+  }
+}

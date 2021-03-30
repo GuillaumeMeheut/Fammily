@@ -1,0 +1,202 @@
+@use '../../styles/variable';
+
+.menuImg {
+  display: none;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: black;
+  font-size: 24px;
+  font-family: "Poppins";
+  font-weight: 400;
+
+  z-index: 100;
+}
+
+.logo {
+  cursor: pointer;
+  width: 76px;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.linkContainer img {
+  display: none;
+}
+
+.linkContainer a {
+  position: relative;
+  margin: 0 0.9vw;
+}
+
+.linkContainer a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: -5px;
+  height: 4px;
+  background-color: variable.$violet;
+  transition: 0.3s ease;
+}
+
+.linkContainer a:hover::before {
+  width: 100%;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 4px;
+  background-color: variable.$violet;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.nav img {
+  position: relative;
+  z-index: 1;
+}
+
+.nav img::before {
+  content: "";
+}
+
+.containerImg {
+  position: relative;
+  cursor: pointer;
+}
+
+.background {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  background-color: variable.$violet;
+  top: -14px;
+  left: -20px;
+  border-radius: 50%;
+  box-shadow: variable.$shadowBox;
+}
+
+.rightMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: fixed;
+  height: 100vh;
+  z-index: 20;
+  top: 0;
+  right: 0;
+
+  padding: 40px 20px;
+
+  background: white;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+
+  transform: translateX(100%);
+  transition: 0.3s ease-in-out;
+}
+
+.rightMenu img {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.rightMenuActive {
+  color: black;
+  transform: translateX(0);
+}
+
+.button {
+  background-color: variable.$violet;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 12px;
+  margin-bottom: 50px;
+
+  color: white;
+  font-size: 24px;
+  font-family: "Roboto";
+
+  cursor: pointer;
+
+  text-align: center;
+
+  width: 100%;
+}
+
+.buttonAdmin {
+  position: absolute;
+  bottom: 0;
+
+  font-size: 18px;
+  width: fit-content;
+  padding: 12px 20px;
+  align-self: flex-end;
+}
+
+@media (max-width: 700px) {
+  .menuImg {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .linkContainer {
+    position: fixed;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 20;
+    top: 0;
+    left: 0;
+
+    padding: 40px 20px;
+
+    background: white;
+
+    transition: 0.3s ease-in-out;
+  }
+
+  .linkContainer a {
+    margin: 15px 0;
+  }
+
+  .linkContainer img {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+
+  .linkContainerActive {
+    display: flex;
+  }
+}

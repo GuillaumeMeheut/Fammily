@@ -1,0 +1,80 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model user {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String @default("")
+
+  activate Boolean @default(false)
+  etudiant Boolean @default(true)
+  isAdmin  Boolean @default(false)
+
+  nom         String  @default("")
+  prenom      String  @default("")
+  image       String  @default("")
+  domaine     Domaine @default(Null)
+  bac         Bac     @default(Null)
+  promo       Int     @default(0)
+  description String  @default("")
+  metier      String  @default("")
+  conseil     String  @default("")
+  portfolio   String  @default("")
+}
+
+enum Domaine {
+  Generaliste
+  Graphisme
+  Developpement
+  Communication
+  Audiovisuel
+  Photographie
+  Autres
+  Null
+}
+
+enum Bac {
+  ES
+  S
+  L
+  Technologique
+  Pro
+  Null
+}
+
+model offre {
+  id           Int         @id @default(autoincrement())
+  titre        String      @default("")
+  lieu         String      @default("")
+  domaine      Domaine     @default(Null)
+  description  String      @default("")
+  entreprise   entreprise? @relation(fields: [entrepriseId], references: [id])
+  entrepriseId Int?
+}
+
+model entreprise {
+  id          Int     @id @default(autoincrement())
+  nom         String  @default("")
+  siren       String  @default("")
+  ville       String  @default("")
+  departement String  @default("")
+  mail        String  @default("")
+  tel         String  @default("")
+  offres      offre[]
+}
+
+model actualite {
+  id    Int    @id @default(autoincrement())
+  titre String @default("")
+  texte String @default("")
+  date  String @default("")
+}

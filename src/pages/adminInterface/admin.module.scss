@@ -1,0 +1,31 @@
+.label {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.inputContainer {
+  margin: 20px 0;
+}
+
+.button {
+  font-size: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.buttonModif {
+  background: rgb(1, 102, 1);
+}
+.buttonDelete {
+  font-size: 24px;
+  background: rgb(168, 3, 3);
+}
+.buttonNew {
+  background: rgb(73, 73, 255);
+}

@@ -1,0 +1,123 @@
+@use '../styles/variable';
+
+.allContainer {
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+.firstContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 100px;
+}
+
+.firstContainer img {
+  max-width: fit-content;
+}
+
+.firstContainer p {
+  width: 50%;
+}
+
+.articlesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  box-shadow: variable.$shadowBox;
+  width: 342px;
+  height: 416px;
+
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.containerText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  align-self: flex-start;
+
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.img {
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 200px;
+  object-fit: contain;
+  align-self: center;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 15px 0 8px;
+  color: nlack;
+}
+
+.texte {
+  font-size: 12px;
+  max-height: 48%;
+  overflow-y: hidden;
+
+  margin-bottom: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 20px;
+
+  align-self: flex-end;
+
+  color: white;
+  background-color: variable.$violet;
+  border-radius: 50px;
+  width: 100px;
+  height: 33px;
+  cursor: pointer;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 700px) {
+  .firstContainer {
+    flex-direction: column;
+
+    margin-bottom: 150px;
+  }
+
+  .firstContainer img {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .articlesContainer {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 230px;
+    height: 350px;
+
+    margin: 15px;
+
+    margin-bottom: 60px;
+  }
+}

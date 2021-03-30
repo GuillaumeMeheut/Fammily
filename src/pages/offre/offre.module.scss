@@ -1,0 +1,126 @@
+@use '../../styles/variable';
+
+.containerAll {
+  position: relative;
+  margin-left: 50px;
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.containerOffre {
+  width: 70%;
+}
+
+.offreTitre {
+  font-size: 56px;
+  font-weight: bold;
+  font-family: "Poppins";
+  color: variable.$violet;
+  text-transform: uppercase;
+}
+
+.offreLocalisation {
+  font-size: 36px;
+  font-family: "Poppins";
+  color: black;
+
+  margin-top: 29px;
+  margin-bottom: 45px;
+}
+
+.offreTitreDesc {
+  font-size: 36px;
+  font-family: "Poppins";
+  color: variable.$violet;
+  margin-bottom: 50px;
+}
+
+.offreDesc {
+  font-size: 24px;
+}
+
+.containerEntreprise {
+  background-color: variable.$violet;
+  border-radius: 50px;
+  padding: 20px 16px;
+
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.containerEntreprise p {
+  font-size: 24px;
+  color: white;
+}
+
+.containerEntreprise p:nth-child(4) {
+  margin-bottom: 24px;
+}
+
+.entrepriseTitre {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .containerAll {
+    position: relative;
+    margin-left: 0;
+  }
+
+  .containerOffre {
+    width: 70%;
+  }
+
+  .offreTitre {
+    font-size: 28px;
+  }
+
+  .offreLocalisation {
+    font-size: 22px;
+
+    margin-top: 18px;
+    margin-bottom: 25px;
+  }
+
+  .offreTitreDesc {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .offreDesc {
+    font-size: 14px;
+  }
+
+  .containerEntreprise {
+    background-color: variable.$violet;
+    border-radius: 30px;
+    padding: 12px 8px;
+
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .containerEntreprise p {
+    font-size: 15px;
+  }
+
+  .containerEntreprise p:nth-child(4) {
+    margin-bottom: 12px;
+  }
+
+  .entrepriseTitre {
+    font-size: 22px;
+  }
+}

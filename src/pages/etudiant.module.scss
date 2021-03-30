@@ -1,0 +1,158 @@
+@use '../styles/variable';
+
+.studentImg {
+  z-index: 2;
+  position: absolute;
+  right: 120px;
+  top: -100px;
+}
+
+.filterContainer {
+  z-index: 5;
+}
+
+.searchBar {
+  width: 600px;
+  height: 50px;
+
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 24px;
+  color: black;
+
+  margin: 20px 0;
+
+  border: none;
+
+  &::placeholder {
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
+    color: #cccccc;
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom-color: variable.$violet;
+  }
+}
+
+.select {
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-size: 21px;
+  padding-left: 24px;
+
+  background-color: variable.$violet;
+  color: white;
+
+  margin: 10px 10px 10px 0;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+  z-index: 5;
+
+  width: 300px;
+  height: 315px;
+
+  border-radius: 20px;
+
+  background-color: white;
+
+  margin-left: 3em;
+  margin-bottom: 3em;
+
+  box-shadow: variable.$shadowBox;
+
+  cursor: pointer;
+}
+
+.card img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+@media (max-width: 700px) {
+  .studentImg {
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 80%;
+  }
+
+  .filterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .searchBar {
+    width: 90%;
+    height: 50px;
+
+    font-size: 14px;
+    padding-left: 10px;
+
+    margin: 10px 0;
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+
+  .select {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 10px;
+
+    margin: 10px 10px 10px 0;
+  }
+
+  .cardsContainer {
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    width: 200px;
+    height: 220px;
+
+    margin: 0;
+    margin-bottom: 20px;
+
+    box-shadow: variable.$shadowBox;
+
+    cursor: pointer;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card p {
+    text-align: center;
+    width: 80%;
+    font-size: 13px;
+  }
+}

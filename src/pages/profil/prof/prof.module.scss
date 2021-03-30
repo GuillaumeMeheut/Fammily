@@ -1,0 +1,84 @@
+@use '../../../styles/variable';
+
+.containerAll {
+  position: relative;
+  margin-left: 50px;
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: space-evenly;
+  // align-items: center;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.containerText {
+  width: 70%;
+}
+
+.containerText span {
+  color: variable.$pink2;
+  font-size: 36px;
+  font-family: "Poppins";
+}
+
+.containerText h3 {
+  font-size: 56px;
+  font-weight: bold;
+  font-family: "Poppins";
+  margin-bottom: 50px;
+}
+.containerText p {
+  font-size: 24px;
+}
+.containerText p:nth-child(2) {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 700px) {
+  .containerAll {
+    margin-left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .image {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+  }
+
+  .containerText {
+    width: 70%;
+    margin-bottom: 25px;
+  }
+
+  .containerText span {
+    font-size: 22px;
+  }
+
+  .containerText h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .containerText p {
+    font-size: 20px;
+  }
+  .containerText p:nth-child(2) {
+    margin-bottom: 30px;
+  }
+}

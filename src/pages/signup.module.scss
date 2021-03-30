@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.incorrect {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.invalid {
+  color: red;
+}
+.valid {
+  color: green;
+}
+
+.container h2 {
+  margin-bottom: 5%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container input {
+  margin: 8px 0;
+}
+
+.button {
+  margin-top: 42px;
+}
+
+@media (max-width: 700px) {
+  .incorrect {
+    font-size: 12px;
+  }
+
+  .button {
+    font-size: 15px;
+  }
+}

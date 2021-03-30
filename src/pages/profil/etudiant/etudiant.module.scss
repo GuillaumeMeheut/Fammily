@@ -1,0 +1,85 @@
+@use '../../../styles/variable';
+
+.containerAll {
+  position: relative;
+  margin-left: 50px;
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image {
+  border-radius: 50%;
+  margin-right: 30px;
+  width: 180px;
+  height: 180px;
+}
+
+.metier {
+  color: variable.$pink2;
+}
+
+.desc {
+  margin-top: 15px;
+  width: 70%;
+}
+
+.conseilContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.conseilTitle {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+  width: fit-content;
+
+  border-bottom: solid 2px black;
+}
+
+.conseil {
+  width: 70%;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .containerAll {
+    margin: 0;
+  }
+
+  .topContainer {
+    flex-direction: column;
+  }
+
+  .image {
+    margin: 0;
+  }
+
+  .containerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    margin-top: 15px;
+  }
+}

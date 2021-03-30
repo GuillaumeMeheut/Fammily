@@ -1,0 +1,12 @@
+@import "../styles/variable.scss";
+
+.container {
+  height: 100vh;
+  @include wrap(center, center, column);
+}
+
+.container {
+  :nth-child(2) {
+    margin: 96px 0 64px 0;
+  }
+}

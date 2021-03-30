@@ -1,0 +1,33 @@
+@import "../styles/variable.scss";
+
+.container {
+  @include wrap(center, center, column);
+  height: 100vh;
+}
+
+.incorrect {
+  font-size: 30px;
+  color: $red;
+}
+
+.containerInput {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+.containerInput input:nth-child(1) {
+  margin-bottom: 50px;
+}
+
+.containerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerButton button:nth-child(1) {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 700px) {
+}

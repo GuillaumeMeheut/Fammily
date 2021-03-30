@@ -1,0 +1,49 @@
+@import "../styles/variable.scss";
+
+.button {
+  border-radius: 50px;
+  min-width: 368px;
+  min-height: 78px;
+  border: 0px;
+
+  font-family: "Roboto";
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+
+  box-shadow: 4px 10px 13px rgba($color: #000000, $alpha: 0.08);
+
+  transition: 0.2s ease-in-out;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.backgroundPink {
+  background-color: $violet;
+  color: white;
+}
+
+.backgroundWhite {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .button {
+    border-radius: 50px;
+    min-width: 240px;
+    min-height: 49px;
+    border: 0px;
+
+    font-family: "Roboto";
+    font-size: 20px;
+  }
+}

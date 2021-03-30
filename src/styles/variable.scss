@@ -1,0 +1,19 @@
+//variable
+$background: white;
+$pink1: #e60d5f;
+$pink2: #ed6d96;
+$pink3: #ffc9da;
+$violet: #db96ff;
+$red: rgb(255, 0, 0);
+
+$blackClair: #656565;
+
+$shadowBox: 5px 10px 14px 0px rgba(0, 0, 0, 0.07);
+
+//mixin
+@mixin wrap($align, $justify, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}

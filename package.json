@@ -1,0 +1,35 @@
+{
+  "name": "annuaire-unilim",
+  "version": "0.1.0",
+  "engines": {
+    "node": "14.x"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT"
+  },
+  "dependencies": {
+    "@prisma/client": "2.16.0",
+    "bcrypt": "^5.0.0",
+    "chart.js": "^2.9.4",
+    "jsonwebtoken": "^8.5.1",
+    "next": "10.0.6",
+    "nodemailer": "^6.4.18",
+    "nookies": "^2.5.2",
+    "react": "17.0.1",
+    "react-chartjs-2": "^2.11.1",
+    "react-dom": "17.0.1",
+    "sass": "^1.32.7"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/node": "^14.14.25",
+    "@types/nookies": "^2.0.3",
+    "@types/react": "^17.0.1",
+    "prisma": "2.16.0",
+    "typescript": "^4.1.3"
+  }
+}

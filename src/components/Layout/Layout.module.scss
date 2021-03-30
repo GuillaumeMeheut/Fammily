@@ -1,0 +1,28 @@
+.container {
+  padding: 10px 24px;
+  min-height: 100vh;
+
+  outline: 3px solid var(--text-color-secondary);
+  outline-offset: -10px;
+
+  width: 100vw;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.main {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0 16px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.75rem;
+}
