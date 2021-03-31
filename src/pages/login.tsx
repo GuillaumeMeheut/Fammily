@@ -68,7 +68,7 @@ function Login() {
           Connexion
         </button>
 
-        <Button href={"/signup"} text={"S'INSCIRE"} backColor={"white"} />
+        <Button href={"/signup"} text={"S'INSCRIRE"} backColor={"white"} />
       </div>
     </div>
   );

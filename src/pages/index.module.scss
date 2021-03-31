@@ -5,8 +5,12 @@
   @include wrap(center, center, column);
 }
 
+.img {
+  width: 20%;
+}
+
 .container {
-  :nth-child(2) {
-    margin: 96px 0 64px 0;
+  :nth-child(3) {
+    margin: 0 0 64px 0;
   }
 }

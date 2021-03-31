@@ -1,10 +1,23 @@
 @use '../styles/variable';
 
+.containerAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img {
+  width: 30%;
+  margin: -100px;
+}
+
 .cardsContainer {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
+  width: 95%;
 }
 
 .card {
@@ -57,6 +70,10 @@
 
     padding: 18px 35px;
     margin-top: 50px;
+  }
+
+  .img {
+    margin: -50px;
   }
 
   .wrap {
