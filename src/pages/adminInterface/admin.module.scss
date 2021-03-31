@@ -29,3 +29,20 @@
 .buttonNew {
   background: rgb(73, 73, 255);
 }
+
+.buttonSmall {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.containerValid {
+  display: flex;
+  align-items: center;
+}

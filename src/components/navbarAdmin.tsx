@@ -10,6 +10,9 @@ function navbarAdmin() {
       <Link href={`/adminInterface/profils`}>
         <a>Modifier les profils</a>
       </Link>
+      <Link href={`/adminInterface/confirmProfil`}>
+        <a>Voir tout les profils à confirmer</a>
+      </Link>
       <Link href={`/adminInterface/entreprises`}>
         <a>Modifier les entreprises</a>
       </Link>
